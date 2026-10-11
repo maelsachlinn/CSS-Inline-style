@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Inline Style Quiz</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f0f8ff;
+    margin:20px;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:#0078d7;
+}
+
+.question{
+    margin-bottom:20px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+button{
+    background:#0078d7;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#005fa3;
+}
+
+#results{
+    font-size:22px;
+    font-weight:bold;
+    margin-top:20px;
+    text-align:center;
+}
+
+.correct{
+    color:green;
+}
+
+.incorrect{
+    color:red;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>CSS Inline Style Quiz</h1>
+
+<p>Choose the correct answer for each question.</p>
+
+<form id="quizForm">
+
+<div class="question">
+<p><strong>1. Which HTML attribute is used for inline CSS?</strong></p>
+<label><input type="radio" name="q1" value="a"> class</label><br>
+<label><input type="radio" name="q1" value="b"> style</label><br>
+<label><input type="radio" name="q1" value="c"> css</label><br>
+<label><input type="radio" name="q1" value="d"> font</label>
+</div>
+
+<div class="question">
+<p><strong>2. Which inline style makes text red?</strong></p>
+<label><input type="radio" name="q2" value="a"> style="font:red"</label><br>
+<label><input type="radio" name="q2" value="b"> style="text:red"</label><br>
+<label><input type="radio" name="q2" value="c"> style="color:red"</label><br>
+<label><input type="radio" name="q2" value="d"> style="red:text"</label>
+</div>
+
+<div class="question">
+<p><strong>3. Which code changes the background colour to yellow?</strong></p>
+<label><input type="radio" name="q3" value="a"> style="background-color:yellow"</label><br>
+<label><input type="radio" name="q3" value="b"> style="bg:yellow"</label><br>
+<label><input type="radio" name="q3" value="c"> style="colour:yellow"</label><br>
+<label><input type="radio" name="q3" value="d"> style="background:paint"</label>
+</div>
+
+<div class="question">
+<p><strong>4. Which inline style makes text 30 pixels high?</strong></p>
+<label><input type="radio" name="q4" value="b"> style="text-size:30"</label><br>
+<label><input type="radio" name="q4" value="c"> style="size:30"</label><br>
+<label><input type="radio" name="q4" value="d"> style="font:30"</label><br>
+<label><input type="radio" name="q4" value="a"> style="font-size:30px"</label>
+</div>
+
+<div class="question">
+<p><strong>5. Which inline style centers text?</strong></p>
+<label><input type="radio" name="q5" value="a"> style="text-align:center"</label><br>
+<label><input type="radio" name="q5" value="b"> style="align-middle"</label><br>
+<label><input type="radio" name="q5" value="c"> style="center:text"</label><br>
+<label><input type="radio" name="q5" value="d"> style="position:center"</label>
+</div>
+
+<div class="question">
+<p><strong>6. Where is inline CSS written?</strong></p>
+<label><input type="radio" name="q6" value="a"> In a separate CSS file</label><br>
+<label><input type="radio" name="q6" value="b"> Inside the HTML element</label><br>
+<label><input type="radio" name="q6" value="c"> Inside JavaScript</label><br>
+<label><input type="radio" name="q6" value="d"> In the browser settings</label>
+</div>
+
+
+<div class="question">
+<p><strong>7. What colour will this text be?</strong></p>
+
+<pre>&lt;p style="color: blue;"&gt;Hello&lt;/p&gt;</pre>
+
+<label><input type="radio" name="q7" value="a"> Red</label><br>
+<label><input type="radio" name="q7" value="b"> Green</label><br>
+<label><input type="radio" name="q7" value="c"> Blue</label><br>
+<label><input type="radio" name="q7" value="d"> Black</label>
+</div>
+
+<div class="question">
+<p><strong>8. Which code correctly makes a heading red and centered?</strong></p>
+
+
+
+<label><input type="radio" name="q8" value="b">
+&lt;h1 style="red;color center;"&gt;Title&lt;/h1&gt;
+</label><br><br>
+
+<label><input type="radio" name="q8" value="c">
+&lt;h1 color="red" align="center"&gt;Title&lt;/h1&gt;
+</label><br><br>
+
+<label><input type="radio" name="q8" value="d">
+&lt;h1 style="centre:red;"&gt;Title&lt;/h1&gt;
+</label><br><br>
+	
+<label><input type="radio" name="q8" value="a">
+&lt;h1 style="color:red; text-align:center;"&gt;Title&lt;/h1&gt;
+</label>	
+	
+</div>
+
+<div class="question">
+<p><strong>9. What is wrong with this inline CSS?</strong></p>
+
+<pre>&lt;p style="color blue;"&gt;Text&lt;/p&gt;</pre>
+
+<label><input type="radio" name="q9" value="a"> Missing a colon (:)</label><br>
+<label><input type="radio" name="q9" value="b"> Missing a semicolon (;)</label><br>
+<label><input type="radio" name="q9" value="c"> Missing quotation marks</label><br>
+<label><input type="radio" name="q9" value="d"> Nothing is wrong</label>
+</div>
+
+<div class="question">
+<p><strong>10. What will happen?</strong></p>
+
+<pre>&lt;p style="font-size:40px; color:green;"&gt;Welcome&lt;/p&gt;</pre>
+
+<label><input type="radio" name="q10" value="a"> Small green text</label><br>
+<label><input type="radio" name="q10" value="b"> Large green text</label><br>
+<label><input type="radio" name="q10" value="c"> Large blue text</label><br>
+<label><input type="radio" name="q10" value="d"> Text disappears</label>
+</div>
+
+<div class="question">
+<p><strong>11. Which line contains TWO inline CSS properties?</strong></p>
+
+<label><input type="radio" name="q11" value="a">
+style="color:red"
+</label><br>
+
+<label><input type="radio" name="q11" value="b">
+style="font-size:20px; color:red;"
+</label><br>
+
+<label><input type="radio" name="q11" value="c">
+style="red"
+</label><br>
+
+<label><input type="radio" name="q11" value="d">
+style="font;"
+</label>
+</div>
+
+<div class="question">
+<p><strong>12. Which code gives a yellow background and blue text?</strong></p>
+
+<label><input type="radio" name="q12" value="a">
+style="background-color:yellow; color:blue;"
+</label><br><br>
+
+<label><input type="radio" name="q12" value="b">
+style="yellow background; blue text;"
+</label><br><br>
+
+<label><input type="radio" name="q12" value="c">
+style="colour:blue background:yellow;"
+</label><br><br>
+
+<label><input type="radio" name="q12" value="d">
+style="bg-yellow text-blue"
+</label>
+</div>	
+	
+</form>
+
+<button type="button" onclick="checkQuiz()">Submit Quiz</button>
+<button type="reset" onclick="resetQuiz()">Reset Quiz</button>
+
+<div id="results"></div>
+
+</div>
+
+<script>
+
+function checkQuiz(){
+
+let answers = {
+q1:"b",
+q2:"c",
+q3:"a",
+q4:"a",
+q5:"a",
+q6:"b",
+q7:"c",
+q8:"a",
+q9:"a",
+q10:"b",
+q11:"b",
+q12:"a"
+};
+
+let score = 0;
+
+for(let question in answers){
+    let selected = document.querySelector(`input[name="${question}"\]:checked`);
+
+    if(selected){
+        if(selected.value === answers[question]){
+            score++;
+        }
+    }
+}
+
+let percentage = Math.round((score/12)*100);
+
+let message = "";
+
+if(percentage >= 80){
+    message = "Excellent! You understand inline CSS very well.";
+}
+else if(percentage >= 50){
+    message = "Good effort! Review a few inline style examples.";
+}
+else{
+    message = "Keep practising inline CSS styles.";
+}
+
+document.getElementById("results").innerHTML =
+`You scored ${score}/12 (${percentage}%)<br>${message}`;
+
+}
+
+function resetQuiz(){
+document.getElementById("results").innerHTML = "";
+}
+
+</script>
+
+</body>
+</html>
